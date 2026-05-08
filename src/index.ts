@@ -1,10 +1,10 @@
 import { create } from "xmlbuilder2";
 import Mocha, { Runner, Test, type MochaOptions } from "mocha";
 import createStatsCollector from "mocha/lib/stats-collector";
-import fs from "fs";
-import path from "path";
-import crypto from "crypto";
-import stripAnsi from "strip-ansi";
+import fs from "node:fs";
+import path from "node:path";
+import crypto from "node:crypto";
+import { stripVTControlCharacters as stripAnsi } from "node:util"
 
 const {
   EVENT_RUN_END,
