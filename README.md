@@ -6,6 +6,10 @@
 
 Cypress test reporter for CircleCI based on [mocha-junit-reporter](https://github.com/michaelleeallen/mocha-junit-reporter). Helps with test parallelization.
 
+NOTE: Changes from 0.5.0 => 0.5.1:
+  * [x] replace stripAnsi dependency with built-in node:util stripVTControlCharacters
+
+
 ## Requirements
 
 - Cypress 3.8.3 or newer
